@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 125888378}
   - component: {fileID: 125888377}
   - component: {fileID: 125888376}
-  - component: {fileID: 125888375}
+  - component: {fileID: 125888379}
   m_Layer: 0
   m_Name: OSC
   m_TagString: Untagged
@@ -243,18 +243,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &125888375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125888374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5c9827f23c9c6d48becadd654799b6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &125888376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,6 +301,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &125888379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125888374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5c9827f23c9c6d48becadd654799b6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oscReceiver: {fileID: 125888377}
+  oscTransmitter: {fileID: 125888376}
 --- !u!1 &465491466
 GameObject:
   m_ObjectHideFlags: 0
