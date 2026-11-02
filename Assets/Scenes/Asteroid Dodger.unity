@@ -265,7 +265,7 @@ MonoBehaviour:
   _localHost: 192.168.157.4
   _localPort: 7000
   _remoteHost: 127.0.0.1
-  _remotePort: 7000
+  _remotePort: 8001
   _useBundle: 0
 --- !u!114 &125888377
 MonoBehaviour:
@@ -285,7 +285,7 @@ MonoBehaviour:
   _workInEditor: 0
   _localHostMode: 0
   _localHost: 192.168.157.4
-  _localPort: 7001
+  _localPort: 8000
 --- !u!4 &125888378
 Transform:
   m_ObjectHideFlags: 0
@@ -315,6 +315,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oscReceiver: {fileID: 125888377}
   oscTransmitter: {fileID: 125888376}
+  asteroidDodger: {fileID: 617091141}
+  betaInMin: 0
+  betaInMax: 1023
+  betaOutMin: -4
+  betaOutMax: 4
 --- !u!1 &465491466
 GameObject:
   m_ObjectHideFlags: 0
