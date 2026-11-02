@@ -316,10 +316,10 @@ MonoBehaviour:
   oscReceiver: {fileID: 125888377}
   oscTransmitter: {fileID: 125888376}
   asteroidDodger: {fileID: 617091141}
-  betaInMin: 0
-  betaInMax: 1023
-  betaOutMin: -4
-  betaOutMax: 4
+  photoInMin: 0
+  photoInMax: 1023
+  photoOutMin: -4
+  photoOutMax: 4
 --- !u!1 &465491466
 GameObject:
   m_ObjectHideFlags: 0

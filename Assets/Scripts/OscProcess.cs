@@ -12,17 +12,17 @@ public class OscProcess : MonoBehaviour
     public AsteroidDodger asteroidDodger;
 
     // PROPRIÉTÉS DE CALIBRATION POUR LA PHOTORÉSISTANCE
-    public int betaInMin = 0;
-    public int betaInMax = 1023;
-    public float betaOutMin = 0.0f; 
-    public float betaOutMax = 1.0f;
+    public int photoInMin = 0;
+    public int photoInMax = 1023;
+    public float photoOutMin = 0.0f; 
+    public float photoOutMax = 1.0f;
 
     // Démarrage est appelée avant la première frame
     void Start()
     {
         // Effectuer le Bind pour lier l'adresse OSC /photo à la méthode TraiterMessageBeta
         {
-            oscReceiver.Bind("/photo", TraiterMessageBeta);
+            oscReceiver.Bind("/photo", TraiterMessagePhoto);
         }
     }
 
@@ -41,7 +41,7 @@ public class OscProcess : MonoBehaviour
     }
 
     // MÉTHODE DE TRAITEMENT DÉDIÉE POUR LA PHOTORÉSISTANCE
-    void TraiterMessageBeta(OSCMessage message)
+    void TraiterMessagePhoto(OSCMessage message)
     {
         // Traiter un entier et l’appliquer à une propriété (flux continu)
 
@@ -53,7 +53,7 @@ public class OscProcess : MonoBehaviour
 
         // Ajustement de la valeur
         float ajustee = (
-            ((float)valeur - betaInMin) / (betaInMax - betaInMin) * (betaOutMax - betaOutMin) + betaOutMin
+            ((float)valeur - photoInMin) / (photoInMax - photoInMin) * (photoOutMax - photoOutMin) + photoOutMin
         );
         
         // DESTINATION : Appliquer la valeur ajustée à la position verticale du vaisseau
