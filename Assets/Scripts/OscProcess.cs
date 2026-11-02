@@ -14,14 +14,13 @@ public class OscProcess : MonoBehaviour
     // PROPRIÉTÉS DE CALIBRATION POUR LA PHOTORÉSISTANCE
     public int betaInMin = 0;
     public int betaInMax = 1023;
-    public float betaOutMin = -4.0f; 
-    public float betaOutMax = 4.0f;
+    public float betaOutMin = 0.0f; 
+    public float betaOutMax = 1.0f;
 
     // Démarrage est appelée avant la première frame
     void Start()
     {
         // Effectuer le Bind pour lier l'adresse OSC /photo à la méthode TraiterMessageBeta
-        if (oscReceiver != null)
         {
             oscReceiver.Bind("/photo", TraiterMessageBeta);
         }
