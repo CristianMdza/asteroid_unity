@@ -265,7 +265,7 @@ MonoBehaviour:
   _localHost: 192.168.157.4
   _localPort: 7000
   _remoteHost: 127.0.0.1
-  _remotePort: 8001
+  _remotePort: 8000
   _useBundle: 0
 --- !u!114 &125888377
 MonoBehaviour:
@@ -285,7 +285,7 @@ MonoBehaviour:
   _workInEditor: 0
   _localHostMode: 0
   _localHost: 192.168.157.4
-  _localPort: 9000
+  _localPort: 8001
 --- !u!4 &125888378
 Transform:
   m_ObjectHideFlags: 0
@@ -319,7 +319,7 @@ MonoBehaviour:
   photoInMin: 0
   photoInMax: 1023
   photoOutMin: -4
-  photoOutMax: 4
+  photoOutMax: 1
 --- !u!1 &465491466
 GameObject:
   m_ObjectHideFlags: 0
